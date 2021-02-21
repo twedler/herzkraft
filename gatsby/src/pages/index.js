@@ -110,9 +110,8 @@ export default function HomePage({ data }) {
               className="neutral nowrap"
               href={`mailto:${email}?subject=Frage zu den Herzkraft Yoga-Preisen`}
             >
-              Schreib mir eine Nachricht
+              Schreib mir eine Nachricht.
             </a>
-            .
           </p>
         </SectionContent>
       </PriceSection>
