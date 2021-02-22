@@ -67,7 +67,7 @@ export default function HomePage({ data }) {
   return (
     <>
       <SEO />
-      <Hero />
+      <Hero src={content.heroImage.asset.fluid} />
 
       <Section id="herzkraft-yoga">
         <HerzkraftSectionContent>

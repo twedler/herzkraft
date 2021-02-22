@@ -2,8 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import breakpoints from '../utils/breakpoints';
 
-import hero from '../assets/images/hero.jpg';
-
 const HeroStyles = styled.section`
   position: relative;
   width: 100%;
@@ -13,7 +11,7 @@ const HeroImage = styled.div`
   width: 100%;
   height: 75vh;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
-  background: url(${hero}) no-repeat center/cover;
+  background: no-repeat center/cover;
 
   @media (orientation: portrait) {
     height: 55vh;
@@ -93,11 +91,10 @@ const Callout = styled.div`
   }
 `;
 
-export default function Hero() {
+export default function Hero(image = '') {
   return (
     <HeroStyles>
-      <HeroImage />
-
+      <HeroImage style={{ backgroundImage: `url(${image.src.src})` }} />
       <Callout>
         <h1>
           Komm ins
