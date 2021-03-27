@@ -1,14 +1,10 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import BlockContent from '@sanity/block-content-to-react';
-import styled from 'styled-components';
 import HKImage from '../components/HKImage';
 import SEO from '../components/SEO';
 import Section, { SectionContent } from '../components/Section';
-
-const CenteredSection = styled(Section)`
-  text-align: center;
-`;
+import CallToAction from '../components/CallToAction';
 
 export default function SinglePostPage({ data: { post } }) {
   return (
@@ -27,17 +23,7 @@ export default function SinglePostPage({ data: { post } }) {
         </SectionContent>
       </Section>
 
-      <CenteredSection>
-        <SectionContent>
-          <h3>Jetzt kostenlosen Schnupperkurs buchen!</h3>
-
-          <p>
-            <Link className="button" to="/#termine">
-              Termin auswählen
-            </Link>
-          </p>
-        </SectionContent>
-      </CenteredSection>
+      <CallToAction />
     </>
   );
 }

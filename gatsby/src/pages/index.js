@@ -51,6 +51,10 @@ const BlogSection = styled(Section)`
   h3 {
     color: var(--color-primary);
   }
+
+  ${SectionContent} > p {
+    text-align: center;
+  }
 `;
 
 export default function HomePage({ data }) {
@@ -120,6 +124,12 @@ export default function HomePage({ data }) {
         <SectionContent>
           <h2>{content.blogHeadline}</h2>
           <PostList posts={posts} />
+
+          <p>
+            <Link className="button" to="/blog">
+              Alle Beiträge anzeigen
+            </Link>
+          </p>
         </SectionContent>
       </BlogSection>
 
@@ -191,7 +201,7 @@ export const query = graphql`
         price
       }
     }
-    posts: allSanityPost(sort: { fields: _createdAt, order: DESC }) {
+    posts: allSanityPost(sort: { fields: _createdAt, order: DESC }, limit: 9) {
       nodes {
         name
         slug {
