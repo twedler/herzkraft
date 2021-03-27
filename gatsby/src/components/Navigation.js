@@ -126,10 +126,10 @@ const items = [
     text: 'Preise',
     url: '/#preise',
   },
-  // {
-  //   text: 'Blog',
-  //   url: '/#blog',
-  // },
+  {
+    text: 'Blog',
+    url: '/#blog',
+  },
   {
     text: 'Nadine',
     url: '/#nadine',
