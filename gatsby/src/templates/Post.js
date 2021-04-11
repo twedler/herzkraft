@@ -18,6 +18,9 @@ export default function SinglePostPage({ data: { post } }) {
           <HKImage src={post.image.asset.fluid} isInline />
 
           <div>
+            <p>
+              <i>{post.date}</i>
+            </p>
             <BlockContent blocks={post._rawContent} />
           </div>
         </SectionContent>
@@ -35,6 +38,7 @@ export const query = graphql`
       slug {
         current
       }
+      date
       image {
         asset {
           fluid(maxWidth: 768) {

@@ -41,7 +41,7 @@ export const query = graphql`
     content: sanityHerzkraft {
       blogHeadline
     }
-    posts: allSanityPost(sort: { fields: _createdAt, order: DESC }) {
+    posts: allSanityPost(sort: { fields: order, order: ASC }) {
       nodes {
         name
         slug {

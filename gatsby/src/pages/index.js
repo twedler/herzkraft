@@ -201,7 +201,7 @@ export const query = graphql`
         price
       }
     }
-    posts: allSanityPost(sort: { fields: _createdAt, order: DESC }, limit: 9) {
+    posts: allSanityPost(sort: { fields: order, order: ASC }, limit: 9) {
       nodes {
         name
         slug {

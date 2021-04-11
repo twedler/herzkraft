@@ -1,10 +1,4 @@
-import React from 'react';
 import { MdFavorite as icon } from 'react-icons/md';
-
-const nowrapIcon = () => <span style={{ fontWeight: 'bold' }}>NW</span>;
-const nowrapRender = (props) => (
-  <span style={{ backgroundColor: 'yellow' }}>{props.children}</span>
-);
 
 export default {
   name: 'herzkraft',
@@ -20,6 +14,7 @@ export default {
     {
       title: 'Hero Image',
       name: 'heroImage',
+      description: 'Resolution: 1920x900',
       type: 'image',
       options: {
         hotspot: true,
@@ -43,6 +38,7 @@ export default {
     {
       title: 'Intro Image',
       name: 'introImage',
+      description: 'Resolution: 768x513',
       type: 'image',
       options: {
         hotspot: true,
@@ -112,6 +108,7 @@ export default {
     {
       title: 'Nadine Image',
       name: 'nadineImage',
+      description: 'Resolution: 768x513',
       type: 'image',
       options: {
         hotspot: true,

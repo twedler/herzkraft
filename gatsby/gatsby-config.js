@@ -32,7 +32,6 @@ export default {
       },
     },
     {
-      // this is the name of the plugin you are adding
       resolve: 'gatsby-source-sanity',
       options: {
         projectId: '8qyft8sp',
