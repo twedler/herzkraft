@@ -6,7 +6,28 @@ import SEO from '../components/SEO';
 import Section, { SectionContent } from '../components/Section';
 import CallToAction from '../components/CallToAction';
 
+const months = [
+  'Januar',
+  'Februar',
+  'März',
+  'April',
+  'Mai',
+  'Juni',
+  'Juli',
+  'August',
+  'September',
+  'Oktober',
+  'November',
+  'Dezember',
+];
+
 export default function SinglePostPage({ data: { post } }) {
+  const dateObject = new Date(post.date);
+  const day = dateObject.getDate();
+  const month = months[dateObject.getMonth()];
+  const year = dateObject.getFullYear();
+  const date = `${day}. ${month}, ${year}`;
+
   return (
     <>
       <SEO title={post.name} image={post.image?.asset?.fluid?.src} />
@@ -19,7 +40,7 @@ export default function SinglePostPage({ data: { post } }) {
 
           <div>
             <p>
-              <i>{post.date}</i>
+              <i>{date}</i>
             </p>
             <BlockContent blocks={post._rawContent} />
           </div>
