@@ -52,11 +52,16 @@ const Separator = styled.span`
 const navItems = [
   {
     id: '1',
+    text: 'AGB',
+    url: '/agb',
+  },
+  {
+    id: '2',
     text: 'Datenschutz',
     url: '/datenschutz',
   },
   {
-    id: '2',
+    id: '3',
     text: 'Impressum',
     url: '/impressum',
   },

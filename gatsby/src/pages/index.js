@@ -116,6 +116,8 @@ export default function HomePage({ data }) {
             >
               Schreib mir eine Nachricht.
             </a>
+            <br />
+            {content.pricesSubtext}
           </p>
         </SectionContent>
       </PriceSection>
@@ -177,6 +179,7 @@ export const query = graphql`
       eventsSubtext
       pricesHeadline
       _rawPricesText(resolveReferences: { maxDepth: 10 })
+      pricesSubtext
       blogHeadline
       nadineHeadline
       nadineImage {

@@ -96,6 +96,11 @@ export default {
       ],
     },
     {
+      title: 'Prices Subtext',
+      name: 'pricesSubtext',
+      type: 'string',
+    },
+    {
       title: 'Blog Headline',
       name: 'blogHeadline',
       type: 'string',

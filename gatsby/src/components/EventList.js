@@ -117,7 +117,7 @@ function SingleEvent({ event }) {
 
   const date = `${day}. ${month}`;
   const subject = `Kursanmeldung: ${event.name} (${date})`;
-  const body = `Hallo liebe Nadine,%0d%0a%0d%0ahiermit möchte ich mich für folgenden Kurs anmelden:%0d%0a%0d%0aName: (bitte angeben)%0d%0aKurs: ${event.name}%0d%0aTermin: ${date} um ${time} Uhr%0d%0a%0d%0aVielen Dank und viele Grüße%0d%0a%0d%0a`;
+  const body = `Hallo liebe Nadine,%0d%0a%0d%0ahiermit möchte ich mich für folgenden Kurs anmelden:%0d%0a%0d%0aName: (bitte angeben)%0d%0aKurs: ${event.name}%0d%0aTermin: ${date} um ${time} Uhr%0d%0a%0d%0aIch habe die AGBs unter https://www.nadineseuffert.com/agb gelesen und bin damit einverstanden.%0d%0a%0d%0aVielen Dank und viele Grüße%0d%0a%0d%0a`;
 
   return (
     <>

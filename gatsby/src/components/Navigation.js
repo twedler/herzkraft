@@ -122,6 +122,10 @@ const items = [
     text: 'Termine',
     url: '/#termine',
   },
+  // {
+  //   text: 'LateNight',
+  //   url: '/latenightyoga',
+  // },
   {
     text: 'Preise',
     url: '/#preise',
