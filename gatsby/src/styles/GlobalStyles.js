@@ -48,6 +48,11 @@ body {
 
   color: var(--font-color);
   background-color: var(--color-white);
+
+  &.is-page--latenight {
+    color: var(--color-white);
+    background-color: var(--color-latenight);
+  }
 }
 
 /* Buttons */
@@ -68,6 +73,15 @@ body {
     border-radius: var(--border-radius);
     cursor: pointer;
     transition: all var(--duration-s);
+
+    .is-page--latenight & {
+      --button-color: var(--color-latenight);
+      --button-color-background: var(--color-white);
+
+      &:hover {
+        --button-color-background: var(--color-primary);
+      }
+    }
 
     &:hover {
       --button-color-background: var(--color-accent-dark);

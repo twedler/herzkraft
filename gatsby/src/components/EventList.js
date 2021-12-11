@@ -79,6 +79,17 @@ const AddUserStyles = styled.a`
   border-radius: var(--border-radius-l);
   transition: all var(--duration-s);
 
+  .is-page--latenight & {
+    color: var(--color-white);
+    border-color: var(--color-white);
+    background: none;
+
+    &:hover {
+      color: var(--color-latenight);
+      background: var(--color-white);
+    }
+  }
+
   svg {
     display: block;
     font-size: var(--font-size-xxl);

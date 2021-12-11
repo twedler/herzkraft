@@ -10,8 +10,11 @@ const HeroStyles = styled.section`
 const HeroImage = styled.div`
   width: 100%;
   height: 75vh;
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
   background: no-repeat center/cover;
+
+  :not(.is-page--latenight &) {
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+  }
 
   @media (orientation: portrait) {
     height: 55vh;
@@ -91,18 +94,22 @@ const Callout = styled.div`
   }
 `;
 
-export default function Hero(image = '') {
+export default function Hero({ image = '', isLateNight = false }) {
+  const showCallout = !isLateNight;
   return (
     <HeroStyles>
-      <HeroImage style={{ backgroundImage: `url(${image.src.src})` }} />
-      <Callout>
-        <h1>
-          Komm ins
-          <br />
-          #teamherzkraft
-        </h1>
-        <p>#yogamitnadine</p>
-      </Callout>
+      <HeroImage style={{ backgroundImage: `url(${image.src})` }} />
+
+      {showCallout && (
+        <Callout>
+          <h1>
+            Komm ins
+            <br />
+            #teamherzkraft
+          </h1>
+          <p>#yogamitnadine</p>
+        </Callout>
+      )}
     </HeroStyles>
   );
 }

@@ -23,6 +23,7 @@ const DesignTokens = createGlobalStyle`
     --color-alert: #cc4b37;
 
     --color-black: #020202;
+    --color-latenight: #0a1327;
     --color-dark-gray: #333;
     --color-gray: #bbb;
     --color-light-gray: #ddd;

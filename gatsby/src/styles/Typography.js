@@ -59,6 +59,10 @@ h1, h2, h3, h4, h5, h6 {
   line-height: var(--line-height-s);
   color: var(--font-color);
   margin-bottom: var(--spacing);
+
+  .is-page--latenight & {
+    color: var(--font-white);
+  }
 }
 
 h1, .h1 {
@@ -125,6 +129,10 @@ a, .link {
     font-weight: var(--font-weight-bold);
     text-decoration: underline;
     color: var(--font-color);
+
+    .is-page--latenight & {
+      color: var(--color-white);
+    }
   }
 }
 

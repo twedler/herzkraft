@@ -16,6 +16,14 @@ const Menu = styled.nav`
     color: var(--menu-link-color);
     padding: var(--spacing-xs);
 
+    .is-page--latenight & {
+      color: var(--color-white);
+
+      &:hover {
+        color: var(--color-primary);
+      }
+    }
+
     ${breakpoints.large`
       padding: var(--spacing-xs) var(--spacing-s);
     `};

@@ -20,6 +20,10 @@ const NavigationStyles = styled.div`
   padding: var(--spacing-s);
   margin: 0 auto;
 
+  .is-page--latenight & {
+    background-color: var(--color-latenight);
+  }
+
   &.is-sticky {
     > .logo {
       flex: 0 0 var(--spacing-l);

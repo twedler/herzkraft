@@ -5,7 +5,9 @@ import schemaTypes from 'all:part:@sanity/base/schema-type';
 // Then we give our schema to the builder and provide the result to Sanity
 
 import herzkraft from './herzkraft';
+import latenight from './latenight';
 import event from './event';
+import latenightEvent from './latenightEvent';
 import price from './price';
 import post from './post';
 
@@ -14,5 +16,12 @@ export default createSchema({
   name: 'default',
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
-  types: schemaTypes.concat([herzkraft, event, price, post]),
+  types: schemaTypes.concat([
+    herzkraft,
+    latenight,
+    event,
+    latenightEvent,
+    price,
+    post,
+  ]),
 });

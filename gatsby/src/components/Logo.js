@@ -13,6 +13,10 @@ const LogoStyles = styled.div`
 
   a {
     color: var(--color-black);
+
+    .is-page--latenight & {
+      color: var(--color-white);
+    }
   }
 
   svg {

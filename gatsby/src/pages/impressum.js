@@ -27,7 +27,7 @@ export default function ImpressumPage() {
             <br />
             Programmierung: Thomas Wedler
             <br />
-            Fotos: Nadine Seuffert
+            Fotos & Texte: Nadine Seuffert
           </p>
           <h2>Haftung für Links</h2>
           <p>

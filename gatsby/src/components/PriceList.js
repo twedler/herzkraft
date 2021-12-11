@@ -27,6 +27,11 @@ const PriceListStyles = styled.ul`
     padding: var(--spacing);
     background-color: var(--color-primary-light);
 
+    .is-page--latenight & {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 2px white;
+    }
+
     &:last-child {
       ${breakpoints.medium`
         grid-column: 1 / span 2;
@@ -81,6 +86,10 @@ const Preis = styled.p`
   font-weight: var(--font-weight-heavy);
   line-height: var(--line-height-s);
   color: var(--color-primary-dark);
+
+  .is-page--latenight & {
+    color: var(--color-primary);
+  }
 `;
 
 function SinglePrice({ index, price }) {
