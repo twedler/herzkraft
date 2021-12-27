@@ -9,6 +9,10 @@ import SEO from '../components/SEO';
 import EventList from '../components/EventList';
 import PriceList from '../components/PriceList';
 
+const LatenightSection = styled(Section)`
+  text-align: center;
+`;
+
 const EventSection = styled(Section)`
   text-align: center;
 `;
@@ -52,22 +56,15 @@ export default function LateNightPage({ data }) {
       <SEO />
       <Hero isLateNight />
 
-      <Section id="herzkraft-yoga">
+      <LatenightSection id="latenight">
         <SectionContent>
           <div>
             <h2>{latenight.introHeadline}</h2>
 
             <BlockContent blocks={latenight._rawIntroText} />
-            <p />
-
-            <p>
-              <Link className="button" to="/#nadine">
-                {latenight.introButton}
-              </Link>
-            </p>
           </div>
         </SectionContent>
-      </Section>
+      </LatenightSection>
 
       <EventSection id="termine">
         <SectionContent>
@@ -75,6 +72,13 @@ export default function LateNightPage({ data }) {
           <BlockContent blocks={latenight._rawEventsText} />
 
           <EventList events={events} />
+
+          <p className="lead">
+            Du suchst die Herzkraft-Termine?{' '}
+            <Link className="neutral nowrap" to="/#termine">
+              Hier entlang.
+            </Link>
+          </p>
 
           <h3>{content.eventsSubline}</h3>
           <p>{content.eventsSubtext}</p>

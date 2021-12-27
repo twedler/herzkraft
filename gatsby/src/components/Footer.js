@@ -16,6 +16,14 @@ const FooterStyles = styled.footer`
     width: var(--spacing-xl);
     margin: 0 auto;
   }
+
+  ${MenuItemsHorizontal} {
+    display: block;
+
+    ${breakpoints.small`
+      display: inline-flex;
+    `};
+  }
 `;
 
 const MenuBar = styled.div`

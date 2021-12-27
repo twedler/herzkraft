@@ -21,7 +21,7 @@ const months = [
 
 const EventListStyles = styled.ul`
   max-width: ${narrowContentWidth};
-  margin: var(--spacing-l) auto var(--spacing-l);
+  margin: var(--spacing-l) auto var(--spacing);
   text-align: left;
 
   display: grid;
@@ -46,6 +46,10 @@ const EventListStyles = styled.ul`
     &:first-child {
       width: var(--spacing-xl);
     }
+  }
+
+  + .lead {
+    margin-bottom: var(--spacing-l);
   }
 `;
 
@@ -124,7 +128,10 @@ function SingleEvent({ event }) {
   const dateObject = new Date(event.date);
   const day = dateObject.getDate();
   const month = months[dateObject.getMonth()];
-  const time = `${dateObject.getHours()}.${dateObject.getMinutes()}`;
+  const minutesPrefix = dateObject.getMinutes() < 10 ? '0' : '';
+  const time = `${dateObject.getUTCHours() + 1}.${
+    minutesPrefix + dateObject.getMinutes()
+  }`;
 
   const date = `${day}. ${month}`;
   const subject = `Kursanmeldung: ${event.name} (${date})`;

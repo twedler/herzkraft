@@ -96,6 +96,13 @@ export default function HomePage({ data }) {
 
           <EventList events={events} />
 
+          <p className="lead">
+            Du suchst die Latenight-Termine?{' '}
+            <Link className="neutral nowrap" to="/latenight#termine">
+              Hier entlang.
+            </Link>
+          </p>
+
           <h3>{content.eventsSubline}</h3>
           <p>{content.eventsSubtext}</p>
         </SectionContent>

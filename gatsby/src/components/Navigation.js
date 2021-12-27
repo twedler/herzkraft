@@ -147,10 +147,10 @@ const items = [
     text: 'Herzkraft Yoga',
     url: '/#herzkraft-yoga',
   },
-  // {
-  //   text: 'LateNight',
-  //   url: '/latenight',
-  // },
+  {
+    text: 'Latenight',
+    url: '/latenight',
+  },
   {
     text: 'Termine',
     url: '/#termine',

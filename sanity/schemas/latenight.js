@@ -52,11 +52,6 @@ export default {
       ],
     },
     {
-      title: 'Intro Button',
-      name: 'introButton',
-      type: 'string',
-    },
-    {
       title: 'Events Text',
       name: 'eventsText',
       type: 'array',
