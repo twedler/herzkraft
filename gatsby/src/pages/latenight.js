@@ -42,9 +42,12 @@ export default function LateNightPage({ data }) {
       <Helmet
         bodyAttributes={{
           class: 'is-page--latenight',
-          style: `background-image: url(${latenight.heroImage.asset.fluid.src})`,
         }}
-      />
+      >
+        <style>
+          {`body { background-image: url(${latenight.heroImage.asset.fluid.src}); }`}
+        </style>
+      </Helmet>
 
       <SEO />
       <Hero isLateNight />
