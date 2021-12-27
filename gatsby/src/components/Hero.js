@@ -19,6 +19,18 @@ const HeroImage = styled.div`
   @media (orientation: portrait) {
     height: 55vh;
   }
+
+  .is-page--latenight & {
+    height: 35vh;
+
+    ${breakpoints.large`
+      height: 45vh;
+    `};
+
+    ${breakpoints.xxlarge`
+      height: 55vh;
+   `};
+  }
 `;
 
 const Callout = styled.div`

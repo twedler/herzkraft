@@ -52,6 +52,27 @@ body {
   &.is-page--latenight {
     color: var(--color-white);
     background-color: var(--color-latenight);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+
+    @media (orientation: portrait) {
+      background-size: 100vh;
+    }
+
+    ${breakpoints.large`
+        background-position-y: -10vh;
+    `};
+
+    ${breakpoints.xlarge`
+      @media (orientation: landscape) {
+        background-position-y: -15vh;
+      }
+    `};
+
+    ${breakpoints.xxlarge`
+      background-position-y: -25vh;
+    `};
   }
 }
 

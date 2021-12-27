@@ -27,7 +27,7 @@ const PriceSection = styled(Section)`
   }
 `;
 
-export default function LateNightYogaPage({ data }) {
+export default function LateNightPage({ data }) {
   const { content, latenight } = data;
   const events = data.events.nodes;
   const prices = data.prices.nodes;
@@ -42,11 +42,12 @@ export default function LateNightYogaPage({ data }) {
       <Helmet
         bodyAttributes={{
           class: 'is-page--latenight',
+          style: `background-image: url(${latenight.heroImage.asset.fluid.src})`,
         }}
       />
 
       <SEO />
-      <Hero image={latenight.heroImage.asset.fluid} isLateNight />
+      <Hero isLateNight />
 
       <Section id="herzkraft-yoga">
         <SectionContent>

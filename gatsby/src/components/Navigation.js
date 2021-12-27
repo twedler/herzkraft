@@ -21,10 +21,14 @@ const NavigationStyles = styled.div`
   margin: 0 auto;
 
   .is-page--latenight & {
-    background-color: var(--color-latenight);
+    background-color: transparent;
   }
 
   &.is-sticky {
+    .is-page--latenight & {
+      background-color: var(--color-latenight);
+    }
+
     > .logo {
       flex: 0 0 var(--spacing-l);
       margin-right: var(--spacing);
@@ -51,7 +55,7 @@ const DesktopNavigationStyles = styled(Menu)`
   ${breakpoints.large`
     display: flex;
     align-items: center;
-    max-width: ${narrowContentWidth};
+    // max-width: ${narrowContentWidth};
   `};
 `;
 
@@ -64,6 +68,11 @@ const MobileNavigationStyles = styled.div`
   text-align: center;
   background-color: var(--color-white);
   z-index: var(--z-index-xxl);
+
+  .is-page--latenight & {
+    background-color: var(--color-latenight);
+    color: var(--color-white);
+  }
 
   .logo {
     width: 80px;
@@ -82,6 +91,14 @@ const MobileNavigationStyles = styled.div`
       &:hover {
         color: var(--color-primary);
       }
+
+      .is-page--latenight & {
+        color: var(--color-white);
+
+        &:hover {
+          color: var(--color-primary);
+        }
+      }
     }
   }
 `;
@@ -93,6 +110,10 @@ const MenuButton = styled.button`
   color: var(--color-black);
   background: none;
   border: none;
+
+  .is-page--latenight & {
+    color: var(--color-white);
+  }
 
   ${breakpoints.large`
     display: none;
@@ -112,6 +133,10 @@ const CloseButton = styled.button`
   border: none;
   margin: 0 auto var(--spacing);
 
+  .is-page--latenight & {
+    color: var(--color-white);
+  }
+
   svg {
     margin: 0;
   }
@@ -122,14 +147,14 @@ const items = [
     text: 'Herzkraft Yoga',
     url: '/#herzkraft-yoga',
   },
+  // {
+  //   text: 'LateNight',
+  //   url: '/latenight',
+  // },
   {
     text: 'Termine',
     url: '/#termine',
   },
-  // {
-  //   text: 'LateNight',
-  //   url: '/latenightyoga',
-  // },
   {
     text: 'Preise',
     url: '/#preise',
