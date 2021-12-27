@@ -136,7 +136,6 @@ export const query = graphql`
       }
       introHeadline
       _rawIntroText(resolveReferences: { maxDepth: 10 })
-      introButton
       _rawEventsText(resolveReferences: { maxDepth: 10 })
       _rawPricesText(resolveReferences: { maxDepth: 10 })
     }
