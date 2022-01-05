@@ -120,7 +120,6 @@ export const query = graphql`
     }
     content: sanityHerzkraft {
       eventsHeadline
-      eventsText
       eventsSubline
       eventsSubtext
       pricesHeadline

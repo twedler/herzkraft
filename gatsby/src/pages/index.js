@@ -92,7 +92,8 @@ export default function HomePage({ data }) {
       <EventSection id="termine">
         <SectionContent>
           <h2>{content.eventsHeadline}</h2>
-          <p>{content.eventsText}</p>
+          {/* <p>{content.eventsText}</p> */}
+          <BlockContent blocks={content._rawEventsText} />
 
           <EventList events={events} />
 
@@ -181,7 +182,7 @@ export const query = graphql`
         }
       }
       eventsHeadline
-      eventsText
+      _rawEventsText(resolveReferences: { maxDepth: 10 })
       eventsSubline
       eventsSubtext
       pricesHeadline

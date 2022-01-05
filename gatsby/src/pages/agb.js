@@ -64,9 +64,10 @@ export default function AGBPage() {
           <p>
             Die Preise richten sich nach der unter{' '}
             <a href="https://www.nadineseuffert.com">www.nadineseuffert.com</a>{' '}
-            einzusehenden aktuellen Preisliste. Der Betrag ist vor Kursbeginn zu
-            entrichten. Geht die Zahlung nicht ein, ist Herzkraft Yoga – Nadine
-            Seuffert nicht zur Leistungsbringung verpflichtet.
+            einzusehenden aktuellen Preisliste. Die Preise gelten für 90 Minuten
+            Herzkraft Yoga bzw. 60 Minuten LateNightYoga. Der Betrag ist vor
+            Kursbeginn zu entrichten. Geht die Zahlung nicht ein, ist Herzkraft
+            Yoga – Nadine Seuffert nicht zur Leistungsbringung verpflichtet.
           </p>
           <h2>7. Termine</h2>
           <p>
@@ -87,14 +88,15 @@ export default function AGBPage() {
           </p>
           <h2>9. Haftung</h2>
           <p>
-            Die Teilnahme an Herzkraft Yoga Online Kursen erfolgt auf eigene
-            Verantwortung. Eine Haftung von Herzkraft Yoga – Nadine Seuffert für
-            Folgen, die aus der Nutzung der Yoga Online Seminare entstehen,
-            besteht nicht. Während der gesamten Kursdauer übernimmt der/die
-            Teilnehmer*in die Verantwortung für sich selbst. <br /> Herzkraft
-            Yoga – Nadine Seuffert übernimmt keine Gewähr für Erreichbarkeit,
-            technische Verwertbarkeit und Virenfreiheit der übermittelten
-            Dateien.
+            Die Teilnahme an Herzkraft Yoga sowie LateNightYoga Online Kursen
+            erfolgt auf eigene Verantwortung. Eine Haftung von Herzkraft Yoga –
+            Nadine Seuffert für Folgen, die aus der Nutzung der Yoga Online
+            Seminare entstehen, besteht nicht. Während der gesamten Kursdauer
+            übernimmt der/die Teilnehmer*in die Verantwortung für sich selbst.
+            <br />
+            Herzkraft Yoga – Nadine Seuffert übernimmt keine Gewähr für
+            Erreichbarkeit, technische Verwertbarkeit und Virenfreiheit der
+            übermittelten Dateien.
           </p>
           <h2>10. Datenschutz</h2>
           <p>
