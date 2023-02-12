@@ -148,8 +148,8 @@ const items = [
     url: '/#herzkraft-yoga',
   },
   {
-    text: 'Latenight',
-    url: '/latenight',
+    text: 'Astro Yoga',
+    url: '/astro-yoga',
   },
   {
     text: 'Termine',

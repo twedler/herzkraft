@@ -31,7 +31,7 @@ const PriceSection = styled(Section)`
   }
 `;
 
-export default function LateNightPage({ data }) {
+export default function AstroYogaPage({ data }) {
   const { content, latenight } = data;
   const events = data.events.nodes;
   const prices = data.prices.nodes;
@@ -56,7 +56,7 @@ export default function LateNightPage({ data }) {
       <SEO />
       <Hero isLateNight />
 
-      <LatenightSection id="latenight">
+      <LatenightSection id="astro-yoga">
         <SectionContent>
           <div>
             <h2>{latenight.introHeadline}</h2>
