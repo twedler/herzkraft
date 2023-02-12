@@ -8,6 +8,7 @@ import herzkraft from './herzkraft';
 import latenight from './latenight';
 import event from './event';
 import latenightEvent from './latenightEvent';
+import yinEvent from './yinEvent';
 import price from './price';
 import post from './post';
 
@@ -21,6 +22,7 @@ export default createSchema({
     latenight,
     event,
     latenightEvent,
+    yinEvent,
     price,
     post,
   ]),
