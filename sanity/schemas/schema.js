@@ -6,6 +6,7 @@ import schemaTypes from 'all:part:@sanity/base/schema-type';
 
 import herzkraft from './herzkraft';
 import latenight from './latenight';
+import yin from './yin';
 import event from './event';
 import latenightEvent from './latenightEvent';
 import yinEvent from './yinEvent';
