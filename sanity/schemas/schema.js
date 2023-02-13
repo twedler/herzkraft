@@ -21,6 +21,7 @@ export default createSchema({
   types: schemaTypes.concat([
     herzkraft,
     latenight,
+    yin,
     event,
     latenightEvent,
     yinEvent,
