@@ -9,7 +9,7 @@ import SEO from '../components/SEO';
 import EventList from '../components/EventList';
 import PriceList from '../components/PriceList';
 
-const LatenightSection = styled(Section)`
+const YinSection = styled(Section)`
   text-align: center;
 `;
 
@@ -32,7 +32,7 @@ const PriceSection = styled(Section)`
 `;
 
 export default function YinYogaPage({ data }) {
-  const { content, latenight } = data;
+  const { content, yin } = data;
   const events = data.events.nodes;
   const prices = data.prices.nodes;
   const {
@@ -47,20 +47,20 @@ export default function YinYogaPage({ data }) {
       <Hero />
       {/* <Hero image={content.heroImage.asset.fluid} /> */}
       
-      <LatenightSection id="yin-yoga">
+      <YinSection id="yin-yoga">
         <SectionContent>
           <div>
-            <h2>{latenight.introHeadline}</h2>
+            <h2>{yin.introHeadline}</h2>
 
-            <BlockContent blocks={latenight._rawIntroText} />
+            <BlockContent blocks={yin._rawIntroText} />
           </div>
         </SectionContent>
-      </LatenightSection>
+      </YinSection>
 
       <EventSection id="termine">
         <SectionContent>
           <h2>{content.eventsHeadline}</h2>
-          <BlockContent blocks={latenight._rawEventsText} />
+          <BlockContent blocks={yin._rawEventsText} />
 
           <EventList events={events} />
 
@@ -79,7 +79,7 @@ export default function YinYogaPage({ data }) {
       <PriceSection id="preise">
         <SectionContent>
           <h2>{content.pricesHeadline}</h2>
-          <BlockContent blocks={latenight._rawPricesText} />
+          <BlockContent blocks={yin._rawPricesText} />
 
           <PriceList prices={prices} />
 
@@ -87,7 +87,7 @@ export default function YinYogaPage({ data }) {
             Du hast Fragen zu den Preisen?{' '}
             <a
               className="neutral nowrap"
-              href={`mailto:${email}?subject=Frage zu den Herzkraft LateNight Yoga-Preisen`}
+              href={`mailto:${email}?subject=Frage zu den Herzkraft Yin Yoga-Preisen`}
             >
               Schreib mir eine Nachricht.
             </a>
@@ -116,7 +116,7 @@ export const query = graphql`
       pricesHeadline
       pricesSubtext
     }
-    latenight: sanityLatenight {
+    yin: sanityYin {
       heroImage {
         asset {
           fluid(maxWidth: 1920) {
@@ -129,7 +129,7 @@ export const query = graphql`
       _rawEventsText(resolveReferences: { maxDepth: 10 })
       _rawPricesText(resolveReferences: { maxDepth: 10 })
     }
-    events: allSanityLatenightEvent(sort: { fields: date, order: ASC }) {
+    events: allSanityYinEvent(sort: { fields: date, order: ASC }) {
       nodes {
         name
         date

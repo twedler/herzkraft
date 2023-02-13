@@ -96,7 +96,7 @@ export default function LateNightPage({ data }) {
             Du hast Fragen zu den Preisen?{' '}
             <a
               className="neutral nowrap"
-              href={`mailto:${email}?subject=Frage zu den Herzkraft LateNight Yoga-Preisen`}
+              href={`mailto:${email}?subject=Frage zu den Herzkraft Astro Yoga-Preisen`}
             >
               Schreib mir eine Nachricht.
             </a>
