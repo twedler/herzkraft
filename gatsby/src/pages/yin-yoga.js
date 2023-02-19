@@ -44,7 +44,7 @@ export default function YinYogaPage({ data }) {
   return (
     <>      
       <SEO />
-      <Hero image={content.heroImage.asset.fluid} isYin />
+      <Hero image={yin.heroImage.asset.fluid} isYin />
       
       <YinSection id="yin-yoga">
         <SectionContent>
