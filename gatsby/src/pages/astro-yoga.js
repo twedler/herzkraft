@@ -144,7 +144,7 @@ export const query = graphql`
         date
       }
     }
-    prices: allSanityPrice(sort: { fields: order, order: ASC }) {
+    prices: allSanityLatenightPrice(sort: { fields: order, order: ASC }) {
       nodes {
         name
         _rawDescription(resolveReferences: { maxDepth: 10 })

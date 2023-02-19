@@ -44,8 +44,7 @@ export default function YinYogaPage({ data }) {
   return (
     <>      
       <SEO />
-      <Hero />
-      {/* <Hero image={content.heroImage.asset.fluid} /> */}
+      <Hero image={content.heroImage.asset.fluid} isYin />
       
       <YinSection id="yin-yoga">
         <SectionContent>
@@ -70,9 +69,6 @@ export default function YinYogaPage({ data }) {
               Hier entlang.
             </Link>
           </p>
-
-          <h3>{content.eventsSubline}</h3>
-          <p>{content.eventsSubtext}</p>
         </SectionContent>
       </EventSection>
 
@@ -111,8 +107,6 @@ export const query = graphql`
     }
     content: sanityHerzkraft {
       eventsHeadline
-      eventsSubline
-      eventsSubtext
       pricesHeadline
       pricesSubtext
     }
@@ -135,7 +129,7 @@ export const query = graphql`
         date
       }
     }
-    prices: allSanityPrice(sort: { fields: order, order: ASC }) {
+    prices: allSanityYinPrice(sort: { fields: order, order: ASC }) {
       nodes {
         name
         _rawDescription(resolveReferences: { maxDepth: 10 })

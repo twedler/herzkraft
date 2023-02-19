@@ -106,8 +106,8 @@ const Callout = styled.div`
   }
 `;
 
-export default function Hero({ image = '', isLateNight = false }) {
-  const showCallout = !isLateNight;
+export default function Hero({ image = '', isLateNight = false, isYin = false }) {
+  const showCallout = !isLateNight && !isYin;
   return (
     <HeroStyles>
       <HeroImage style={{ backgroundImage: `url(${image.src})` }} />
