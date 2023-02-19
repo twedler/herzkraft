@@ -2,7 +2,7 @@ import { MdFavorite as icon } from 'react-icons/md';
 
 export default {
   name: 'herzkraft',
-  title: 'Herzkraft',
+  title: 'Herzkraft Yoga',
   type: 'document',
   icon,
   fields: [

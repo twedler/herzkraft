@@ -2,7 +2,7 @@ import { MdOutlineNightlight as icon } from 'react-icons/md';
 
 export default {
   name: 'latenightEvent',
-  title: 'Latenight Events',
+  title: 'Astro Events',
   type: 'document',
   icon,
   fields: [

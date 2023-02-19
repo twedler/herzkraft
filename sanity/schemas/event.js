@@ -2,7 +2,7 @@ import { MdPermContactCalendar as icon } from 'react-icons/md';
 
 export default {
   name: 'event',
-  title: 'Events',
+  title: 'Herzkraft Events',
   type: 'document',
   icon,
   fields: [

@@ -1,8 +1,8 @@
-import { MdNightlight as icon } from 'react-icons/md';
+import { MdSelfImprovement as icon } from 'react-icons/md';
 
 export default {
   name: 'yin',
-  title: 'Yin',
+  title: 'Yin Yoga',
   type: 'document',
   icon,
   fields: [

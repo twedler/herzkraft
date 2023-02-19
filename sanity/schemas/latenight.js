@@ -2,7 +2,7 @@ import { MdNightlight as icon } from 'react-icons/md';
 
 export default {
   name: 'latenight',
-  title: 'Latenight',
+  title: 'Astro Yoga',
   type: 'document',
   icon,
   fields: [

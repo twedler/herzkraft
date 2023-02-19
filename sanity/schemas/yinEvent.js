@@ -1,4 +1,4 @@
-import { MdOutlineNightlight as icon } from 'react-icons/md';
+import { MdSelfImprovement as icon } from 'react-icons/md';
 
 export default {
   name: 'yinEvent',

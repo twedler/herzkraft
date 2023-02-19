@@ -1,8 +1,8 @@
-import { MdMonetizationOn as icon } from 'react-icons/md';
+import { MdOutlineMonetizationOn as icon } from 'react-icons/md';
 
 export default {
-  name: 'price',
-  title: 'Herzkraft Prices',
+  name: 'yinPrice',
+  title: 'Yin Prices',
   type: 'document',
   icon,
   fields: [

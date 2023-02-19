@@ -11,6 +11,8 @@ import event from './event';
 import latenightEvent from './latenightEvent';
 import yinEvent from './yinEvent';
 import price from './price';
+import latenightPrice from './latenightPrice';
+import yinPrice from './yinPrice';
 import post from './post';
 
 export default createSchema({
@@ -26,6 +28,8 @@ export default createSchema({
     latenightEvent,
     yinEvent,
     price,
+    latenightPrice,
+    yinPrice,
     post,
   ]),
 });
