@@ -12,7 +12,7 @@ const HeroImage = styled.div`
   height: 75vh;
   background: no-repeat center/cover;
 
-  :not(.is-page--latenight &) {
+  :not(.is-page--latenight &):not(.is-page--yin &) {
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
   }
 

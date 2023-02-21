@@ -33,9 +33,11 @@ const PriceListStyles = styled.ul`
     }
 
     &:last-child {
-      ${breakpoints.medium`
-        grid-column: 1 / span 2;
-      `};
+      :not(.is-page--latenight &):not(.is-page--yin &) {
+        ${breakpoints.medium`
+          grid-column: 1 / span 2;
+        `};
+      }
 
       > div {
         ${breakpoints.medium`

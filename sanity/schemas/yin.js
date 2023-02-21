@@ -103,5 +103,25 @@ export default {
         },
       ],
     },
+    {
+      title: 'About Headline',
+      name: 'aboutHeadline',
+      type: 'string',
+    },
+    {
+      title: 'About Image',
+      name: 'aboutImage',
+      description: 'Resolution: 768x513',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    },
+    {
+      title: 'About Text',
+      name: 'aboutText',
+      type: 'array',
+      of: [{ type: 'block' }],
+    },
   ],
 };

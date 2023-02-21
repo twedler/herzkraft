@@ -43,6 +43,12 @@ export default function YinYogaPage({ data }) {
 
   return (
     <>      
+      <Helmet
+        bodyAttributes={{
+          class: 'is-page--yin',
+        }}
+      ></Helmet>
+
       <SEO />
       <Hero image={yin.heroImage.asset.fluid} isYin />
       
@@ -92,6 +98,14 @@ export default function YinYogaPage({ data }) {
           </p>
         </SectionContent>
       </PriceSection>
+
+      <Section id="ueber">
+        <SectionContent>
+          <h2>{yin.aboutHeadline}</h2>
+          <HKImage src={yin.aboutImage.asset.fluid} isInline />
+          <BlockContent blocks={yin._rawaboutText} />
+        </SectionContent>
+      </Section>
     </>
   );
 }
@@ -108,7 +122,7 @@ export const query = graphql`
     content: sanityHerzkraft {
       eventsHeadline
       pricesHeadline
-      pricesSubtext
+      pricesSubtext      
     }
     yin: sanityYin {
       heroImage {
@@ -122,6 +136,15 @@ export const query = graphql`
       _rawIntroText(resolveReferences: { maxDepth: 10 })
       _rawEventsText(resolveReferences: { maxDepth: 10 })
       _rawPricesText(resolveReferences: { maxDepth: 10 })
+      aboutHeadline
+      aboutImage {
+        asset {
+          fluid(maxWidth: 768) {
+            ...GatsbySanityImageFluid
+          }
+        }
+      }
+      _rawaboutText(resolveReferences: { maxDepth: 10 })
     }
     events: allSanityYinEvent(sort: { fields: date, order: ASC }) {
       nodes {
