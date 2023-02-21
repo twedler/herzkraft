@@ -32,12 +32,10 @@ const PriceListStyles = styled.ul`
       box-shadow: inset 0 0 0 2px white;
     }
 
-    &:last-child {
-      :not(.is-page--latenight &):not(.is-page--yin &) {
-        ${breakpoints.medium`
-          grid-column: 1 / span 2;
-        `};
-      }
+    &:nth-child(5) {
+      ${breakpoints.medium`
+        grid-column: 1 / span 2;
+      `};
 
       > div {
         ${breakpoints.medium`
