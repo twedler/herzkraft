@@ -103,8 +103,8 @@ export default function YinYogaPage({ data }) {
         <SectionContent>
           <h2>{yin.aboutHeadline}</h2>
           <HKImage src={yin.aboutImage.asset.fluid} isInline />
-          <BlockContent blocks={yin._rawaboutText} />
-        </SectionContent>
+          <BlockContent blocks={yin._rawAboutText} />
+        </SectionContent> 
       </Section>
     </>
   );
@@ -144,7 +144,7 @@ export const query = graphql`
           }
         }
       }
-      _rawaboutText(resolveReferences: { maxDepth: 10 })
+      _rawAboutText(resolveReferences: { maxDepth: 10 })
     }
     events: allSanityYinEvent(sort: { fields: date, order: ASC }) {
       nodes {
