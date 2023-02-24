@@ -43,7 +43,7 @@ const MenuItems = styled.ul`
 
 export const MenuItemsVertical = styled(MenuItems)`
   li {
-    margin-bottom: var(--spacing);
+    margin-bottom: var(--spacing-s);
 
     &:last-child {
       margin-bottom: 0;
