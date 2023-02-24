@@ -98,8 +98,8 @@ export default function HomePage({ data }) {
           <EventList events={events} />
 
           <p className="lead">
-            Du suchst die Latenight-Termine?{' '}
-            <Link className="neutral nowrap" to="/latenight#termine">
+            Du suchst die Yin Yoga Termine?{' '}
+            <Link className="neutral nowrap" to="/yin-yoga#termine">
               Hier entlang.
             </Link>
           </p>

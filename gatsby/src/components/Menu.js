@@ -24,7 +24,7 @@ const Menu = styled.nav`
       }
     }
 
-    ${breakpoints.large`
+    ${breakpoints.xlarge`
       padding: var(--spacing-xs) var(--spacing-s);
     `};
 
