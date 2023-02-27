@@ -1,7 +1,7 @@
 import { Link } from 'gatsby';
 import React, { useState, useRef, useEffect, Component } from 'react';
 import styled from 'styled-components';
-import { FaInstagram } from 'react-icons/fa';
+import { FaInstagram, FaYoutube } from 'react-icons/fa';
 import { BiX, BiMenu } from 'react-icons/bi';
 import Menu, { MenuItemsHorizontal, MenuItemsVertical } from './Menu';
 import breakpoints, { narrowContentWidth } from '../utils/breakpoints';
@@ -154,11 +154,7 @@ const items = [
   {
     text: 'Astro Yoga',
     url: '/astro-yoga',
-  },
-  {
-    text: 'Termine',
-    url: '/#termine',
-  },
+  },  
   {
     text: 'Preise',
     url: '/#preise',
@@ -187,6 +183,11 @@ function ExternalLinks() {
       <li>
         <ExternalLink to="https://www.instagram.com/nadineseuffert/">
           <FaInstagram />
+        </ExternalLink>
+      </li>
+      <li>
+        <ExternalLink to="https://www.youtube.com/@nadineseuffert/">
+          <FaYoutube />
         </ExternalLink>
       </li>
     </MenuItemsHorizontal>
