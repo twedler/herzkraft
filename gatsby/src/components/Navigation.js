@@ -87,6 +87,7 @@ const MobileNavigationStyles = styled.div`
     a {
       font-size: var(--font-size-xl);
       color: var(--font-color);
+      padding: var(--spacing-xs) var(--spacing-s);
 
       &:hover {
         color: var(--color-primary);
