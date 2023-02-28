@@ -1,7 +1,7 @@
 import { Link } from 'gatsby';
 import React, { useState, useRef, useEffect, Component } from 'react';
 import styled from 'styled-components';
-import { FaInstagram, FaYoutube } from 'react-icons/fa';
+import { FaInstagram, FaYoutubeSquare } from 'react-icons/fa';
 import { BiX, BiMenu } from 'react-icons/bi';
 import Menu, { MenuItemsHorizontal, MenuItemsVertical } from './Menu';
 import breakpoints, { narrowContentWidth } from '../utils/breakpoints';
@@ -188,7 +188,7 @@ function ExternalLinks() {
       </li>
       <li>
         <ExternalLink to="https://www.youtube.com/@nadineseuffert/">
-          <FaYoutube />
+          <FaYoutubeSquare />
         </ExternalLink>
       </li>
     </MenuItemsHorizontal>
