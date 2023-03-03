@@ -18,7 +18,7 @@ export default function Layout({ children }) {
             window.ga=window.ga||function()
             {(ga.q = ga.q || []).push(arguments)}
             ;ga.l=+new Date; ga("create",
-            "258987239", "auto"); ga("send",
+            "356168833", "auto"); ga("send",
             "pageview");
           `}
         </script>
