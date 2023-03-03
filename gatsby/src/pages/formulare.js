@@ -1,5 +1,5 @@
 import React from 'react';
-import { Section, SectionContent } from '../components/Section';
+import Section, { SectionContent } from '../components/Section';
 
 export default function FormularePage() {
   return (        
