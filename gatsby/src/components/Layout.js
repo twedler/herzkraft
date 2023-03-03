@@ -12,15 +12,14 @@ export default function Layout({ children }) {
   return (
     <>
       <Helmet>
-        <script async src="https://www.google-analytics.com/analytics.js" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KB09PJ7FZZ"></script>
         <script>
           {`
-            window.ga=window.ga||function()
-            {(ga.q = ga.q || []).push(arguments)}
-            ;ga.l=+new Date; ga("create",
-            "356168833", "auto"); ga("send",
-            "pageview");
-          `}
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag("js", new Date());
+            gtag("config", "G-KB09PJ7FZZ");`
+          }
         </script>
 
 {/*         <script async src="https://nadineseuffert.activehosted.com/f/embed.php?id=1" type="text/javascript" charset="utf-8" />
