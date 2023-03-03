@@ -23,8 +23,8 @@ export default function Layout({ children }) {
           `}
         </script>
 
-        <script async src="https://nadineseuffert.activehosted.com/f/embed.php?id=1" type="text/javascript" charset="utf-8" />
-        <script async src="https://nadineseuffert.activehosted.com/f/embed.php?id=3" type="text/javascript" charset="utf-8" />
+{/*         <script async src="https://nadineseuffert.activehosted.com/f/embed.php?id=1" type="text/javascript" charset="utf-8" />
+        <script async src="https://nadineseuffert.activehosted.com/f/embed.php?id=3" type="text/javascript" charset="utf-8" /> */}
       </Helmet>
       
       {/* Styles */}
