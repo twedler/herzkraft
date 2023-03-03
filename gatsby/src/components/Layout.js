@@ -12,19 +12,19 @@ export default function Layout({ children }) {
   return (
     <>
       <Helmet>
-{/*         <script async src="https://www.google-analytics.com/analytics.js" />
+        <script async src="https://www.google-analytics.com/analytics.js" />
         <script>
           {`
             window.ga=window.ga||function()
             {(ga.q = ga.q || []).push(arguments)}
-            ;ga.l=+new Date; ga('create',
-            '258987239', 'auto'); ga('send',
-            'pageview');
+            ;ga.l=+new Date; ga("create",
+            "258987239", "auto"); ga("send",
+            "pageview");
           `}
-        </script> */}
+        </script>
 
-        <script src="https://nadineseuffert.activehosted.com/f/embed.php?id=1" type="text/javascript" charset="utf-8" />
-        <script src="https://nadineseuffert.activehosted.com/f/embed.php?id=3" type="text/javascript" charset="utf-8" />
+        <script async src="https://nadineseuffert.activehosted.com/f/embed.php?id=1" type="text/javascript" charset="utf-8" />
+        <script async src="https://nadineseuffert.activehosted.com/f/embed.php?id=3" type="text/javascript" charset="utf-8" />
       </Helmet>
       
       {/* Styles */}
