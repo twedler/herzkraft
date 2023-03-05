@@ -81,7 +81,7 @@ export default function YinYogaPage({ data }) {
         </SectionContent>
       </EventSection>
 
-      <NewsletterForm />
+      {/* <NewsletterForm /> */}
 
       <PriceSection id="preise">
         <SectionContent>
