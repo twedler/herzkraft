@@ -161,6 +161,7 @@ export default function NewsletterForm() {
               </form>
             </div>
 
+<Helmet>
             <script type="text/javascript">
               {`
               window.cfields = [];
@@ -557,6 +558,7 @@ export default function NewsletterForm() {
               })();
               `}
             </script>
+            </Helmet>
           </NewsletterFormStyles>
         </SectionContent>
       </Section>
