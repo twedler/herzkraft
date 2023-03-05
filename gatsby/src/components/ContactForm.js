@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import Section, { SectionContent } from './Section';
 
 export default function ContactForm() {
-
   useEffect(() => {
     const script = document.createElement('script');
   

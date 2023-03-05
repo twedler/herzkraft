@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Section, { SectionContent } from '../components/Section';
 
 export default function NewsletterForm() {
