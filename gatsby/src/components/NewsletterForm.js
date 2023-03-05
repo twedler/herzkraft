@@ -9,7 +9,7 @@ export default function NewsletterForm() {
           <div className="_form_1"></div>
 
           <Helmet>
-            <script src="https://nadineseuffert.activehosted.com/f/embed.php?id=1" type="text/javascript" charSet="utf-8" />
+            <script async src="https://nadineseuffert.activehosted.com/f/embed.php?id=1" type="text/javascript" charSet="utf-8" />
           </Helmet>
         </SectionContent>
       </Section>

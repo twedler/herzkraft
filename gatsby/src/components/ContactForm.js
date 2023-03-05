@@ -9,7 +9,7 @@ export default function ContactForm() {
           <div className="_form_3"></div>
 
           <Helmet>
-            <script src="https://nadineseuffert.activehosted.com/f/embed.php?id=3" type="text/javascript" charSet="utf-8" />
+            <script async src="https://nadineseuffert.activehosted.com/f/embed.php?id=3" type="text/javascript" charSet="utf-8" />
           </Helmet>
         </SectionContent>
       </Section>
