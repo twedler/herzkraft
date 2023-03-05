@@ -109,6 +109,8 @@ export default function HomePage({ data }) {
         </SectionContent>
       </EventSection>
 
+      <NewsletterForm />
+      
       <PriceSection id="preise">
         <SectionContent>
           <h2>{content.pricesHeadline}</h2>
@@ -150,6 +152,8 @@ export default function HomePage({ data }) {
           <BlockContent blocks={content._rawNadineText} />
         </SectionContent>
       </Section>
+
+      <ContactForm />
     </>
   );
 }

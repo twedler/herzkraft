@@ -85,6 +85,8 @@ export default function AstroYogaPage({ data }) {
         </SectionContent>
       </EventSection>
 
+      <NewsletterForm />
+
       <PriceSection id="preise">
         <SectionContent>
           <h2>{content.pricesHeadline}</h2>
@@ -105,6 +107,8 @@ export default function AstroYogaPage({ data }) {
           </p>
         </SectionContent>
       </PriceSection>
+
+      <ContactForm />
     </>
   );
 }

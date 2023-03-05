@@ -79,6 +79,8 @@ export default function YinYogaPage({ data }) {
         </SectionContent>
       </EventSection>
 
+      <NewsletterForm />
+
       <PriceSection id="preise">
         <SectionContent>
           <h2>{content.pricesHeadline}</h2>
@@ -107,6 +109,8 @@ export default function YinYogaPage({ data }) {
           <BlockContent blocks={yin._rawAboutText} />
         </SectionContent> 
       </Section>
+
+      <ContactForm />
     </>
   );
 }
