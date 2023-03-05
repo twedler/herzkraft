@@ -111,7 +111,7 @@ export default function AstroYogaPage({ data }) {
         </SectionContent>
       </PriceSection>
 
-      <ContactForm />
+      {/* <ContactForm /> */}
     </>
   );
 }

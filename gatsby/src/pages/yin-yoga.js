@@ -112,7 +112,7 @@ export default function YinYogaPage({ data }) {
         </SectionContent> 
       </Section>
 
-      <ContactForm />
+      {/* <ContactForm /> */}
     </>
   );
 }

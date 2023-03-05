@@ -155,7 +155,7 @@ export default function HomePage({ data }) {
         </SectionContent>
       </Section>
 
-      <ContactForm />
+      {/* <ContactForm /> */}
     </>
   );
 }
