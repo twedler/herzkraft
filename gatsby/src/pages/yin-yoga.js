@@ -9,6 +9,8 @@ import HKImage from '../components/HKImage';
 import SEO from '../components/SEO';
 import EventList from '../components/EventList';
 import PriceList from '../components/PriceList';
+import NewsletterForm from '../components/NewsletterForm';
+import ContactForm from '../components/ContactForm';
 
 const YinSection = styled(Section)`
   text-align: center;

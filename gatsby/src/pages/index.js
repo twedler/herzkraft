@@ -10,6 +10,8 @@ import EventList from '../components/EventList';
 import PostList from '../components/PostList';
 import PriceList from '../components/PriceList';
 import breakpoints from '../utils/breakpoints';
+import NewsletterForm from '../components/NewsletterForm';
+import ContactForm from '../components/ContactForm';
 
 const HerzkraftSectionContent = styled(SectionContent)`
   display: grid;
@@ -110,7 +112,7 @@ export default function HomePage({ data }) {
       </EventSection>
 
       <NewsletterForm />
-      
+
       <PriceSection id="preise">
         <SectionContent>
           <h2>{content.pricesHeadline}</h2>

@@ -8,6 +8,9 @@ import Hero from '../components/Hero';
 import SEO from '../components/SEO';
 import EventList from '../components/EventList';
 import PriceList from '../components/PriceList';
+import NewsletterForm from '../components/NewsletterForm';
+import ContactForm from '../components/ContactForm';
+
 
 const LatenightSection = styled(Section)`
   text-align: center;
