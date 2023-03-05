@@ -111,7 +111,7 @@ export default function HomePage({ data }) {
         </SectionContent>
       </EventSection>
 
-      {/* <NewsletterForm /> */}
+      <NewsletterForm />
 
       <PriceSection id="preise">
         <SectionContent>
@@ -155,7 +155,7 @@ export default function HomePage({ data }) {
         </SectionContent>
       </Section>
 
-      {/* <ContactForm /> */}
+      <ContactForm />
     </>
   );
 }

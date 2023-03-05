@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { Helmet } from 'react-helmet';
 import Section, { SectionContent } from './Section';
 
 export default function ContactForm() {
