@@ -1,4 +1,5 @@
 import React from 'react';
+import ContactForm from '../components/ContactForm';
 import NewsletterForm from '../components/NewsletterForm';
 import Section, { SectionContent } from '../components/Section';
 
@@ -10,7 +11,7 @@ export default function FormularePage() {
           <h2>----------</h2>
           <NewsletterForm />
           <h2>----------</h2>
-          <div className="_form_3"></div>
+          <ContactForm />
         </SectionContent>
       </Section>
   );
