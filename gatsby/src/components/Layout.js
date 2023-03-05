@@ -18,7 +18,7 @@ export default function Layout({ children }) {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag("js", new Date());
-            gtag("config", "G-KB09PJ7FZZ");`
+            gtag("config", "G-KB09PJ7FZZ", {'anonymize_ip': true});`
           }
         </script>
 
