@@ -1,7 +1,7 @@
 import { Link } from 'gatsby';
 import React, { useState, useRef, useEffect, Component } from 'react';
 import styled from 'styled-components';
-import { FaInstagram, FaYoutubeSquare } from 'react-icons/fa';
+import { FaInstagram, FaPodcast, FaSpotify, FaYoutubeSquare } from 'react-icons/fa';
 import { BiX, BiMenu } from 'react-icons/bi';
 import Menu, { MenuItemsHorizontal, MenuItemsVertical } from './Menu';
 import breakpoints, { narrowContentWidth } from '../utils/breakpoints';
@@ -155,11 +155,7 @@ const items = [
   {
     text: 'Astro Yoga',
     url: '/astro-yoga',
-  },  
-  {
-    text: 'Preise',
-    url: '/#preise',
-  },
+  },    
   {
     text: 'Blog',
     url: '/#blog',
@@ -189,6 +185,16 @@ function ExternalLinks() {
       <li>
         <ExternalLink to="https://www.youtube.com/@nadineseuffert/">
           <FaYoutubeSquare />
+        </ExternalLink>
+      </li>
+      <li>
+        <ExternalLink to="https://open.spotify.com/show/4m5dBTNNHOLLma2rtStjMV">
+          <FaSpotify />
+        </ExternalLink>
+      </li>
+      <li>
+        <ExternalLink to="https://podcasts.apple.com/podcast/id1676616365">
+          <FaPodcast />
         </ExternalLink>
       </li>
     </MenuItemsHorizontal>
