@@ -60,9 +60,7 @@ export default function AGBPage() {
 
 <p>Die Klient:innen versichern, nicht an einer ansteckenden Krankheit zu leiden (nur bei Offline Angeboten) und dass dem Ausf&uuml;hren der Bewegungs&uuml;bungen keine medizinischen Gr&uuml;nde entgegenstehen.</p>
 
-<p>Chronische Erkrankungen, Erkrankungen des Bewegungsapparates sowie andere k&ouml;rperliche oder psychische Leiden, die die/den Klienten/in in ihrer/seiner</p>
-
-<p>Bewegungspraxis beeinflussen k&ouml;nnten, sind in der Kursleitung jeweils vor Stundenbeginn mitzuteilen. Auch das Vorliegen einer Schwangerschaft ist jeweils mit der Anmeldung unbedingt bekanntzugeben.</p>
+<p>Chronische Erkrankungen, Erkrankungen des Bewegungsapparates sowie andere k&ouml;rperliche oder psychische Leiden, die die/den Klienten/in in ihrer/seiner Bewegungspraxis beeinflussen k&ouml;nnten, sind in der Kursleitung jeweils vor Stundenbeginn mitzuteilen. Auch das Vorliegen einer Schwangerschaft ist jeweils mit der Anmeldung unbedingt bekanntzugeben.</p>
 
 <p>Die/der Teilnehmer*in nutzt das Online Yoga Angebot mit gr&ouml;&szlig;ter Achtsamkeit gegen&uuml;ber dem eigenen K&ouml;rper.</p>
 
