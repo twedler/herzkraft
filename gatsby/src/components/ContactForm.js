@@ -1,3 +1,4 @@
+import React from "react";
 import Section, { SectionContent } from "./Section";
 
 export default function ContactForm() {
