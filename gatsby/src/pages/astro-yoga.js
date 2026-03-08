@@ -1,16 +1,14 @@
-import { Link, graphql } from 'gatsby';
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import BlockContent from '@sanity/block-content-to-react';
-import styled from 'styled-components';
-import Section, { SectionContent } from '../components/Section';
-import Hero from '../components/Hero';
-import SEO from '../components/SEO';
-import EventList from '../components/EventList';
-import PriceList from '../components/PriceList';
-import NewsletterForm from '../components/NewsletterForm';
-import ContactForm from '../components/ContactForm';
-
+import { Link, graphql } from "gatsby";
+import React from "react";
+import { Helmet } from "react-helmet";
+import BlockContent from "@sanity/block-content-to-react";
+import styled from "styled-components";
+import Section, { SectionContent } from "../components/Section";
+import Hero from "../components/Hero";
+import SEO from "../components/SEO";
+import EventList from "../components/EventList";
+import PriceList from "../components/PriceList";
+import ContactForm from "../components/ContactForm";
 
 const LatenightSection = styled(Section)`
   text-align: center;
@@ -48,7 +46,7 @@ export default function AstroYogaPage({ data }) {
     <>
       <Helmet
         bodyAttributes={{
-          class: 'is-page--latenight',
+          class: "is-page--latenight",
         }}
       >
         <style>
@@ -77,7 +75,7 @@ export default function AstroYogaPage({ data }) {
           <EventList events={events} />
 
           <p className="lead">
-            Du suchst die Herzkraft-Termine?{' '}
+            Du suchst die Herzkraft-Termine?{" "}
             <Link className="neutral nowrap" to="/#termine">
               Hier entlang.
             </Link>
@@ -88,8 +86,6 @@ export default function AstroYogaPage({ data }) {
         </SectionContent>
       </EventSection>
 
-      {/* <NewsletterForm /> */}
-
       <PriceSection id="preise">
         <SectionContent>
           <h2>{content.pricesHeadline}</h2>
@@ -98,7 +94,7 @@ export default function AstroYogaPage({ data }) {
           <PriceList prices={prices} />
 
           <p className="lead">
-            Du hast Fragen zu den Preisen?{' '}
+            Du hast Fragen zu den Preisen?{" "}
             <a
               className="neutral nowrap"
               href={`mailto:${email}?subject=Frage zu den Herzkraft LateNight Yoga-Preisen`}
@@ -111,7 +107,7 @@ export default function AstroYogaPage({ data }) {
         </SectionContent>
       </PriceSection>
 
-      {/* <ContactForm /> */}
+      <ContactForm />
     </>
   );
 }

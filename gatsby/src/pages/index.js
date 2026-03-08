@@ -1,17 +1,16 @@
-import { Link, graphql } from 'gatsby';
-import React from 'react';
-import BlockContent from '@sanity/block-content-to-react';
-import styled from 'styled-components';
-import Section, { SectionContent } from '../components/Section';
-import Hero from '../components/Hero';
-import HKImage from '../components/HKImage';
-import SEO from '../components/SEO';
-import EventList from '../components/EventList';
-import PostList from '../components/PostList';
-import PriceList from '../components/PriceList';
-import breakpoints from '../utils/breakpoints';
-import NewsletterForm from '../components/NewsletterForm';
-import ContactForm from '../components/ContactForm';
+import { Link, graphql } from "gatsby";
+import React from "react";
+import BlockContent from "@sanity/block-content-to-react";
+import styled from "styled-components";
+import Section, { SectionContent } from "../components/Section";
+import Hero from "../components/Hero";
+import HKImage from "../components/HKImage";
+import SEO from "../components/SEO";
+import EventList from "../components/EventList";
+import PostList from "../components/PostList";
+import PriceList from "../components/PriceList";
+import breakpoints from "../utils/breakpoints";
+import ContactForm from "../components/ContactForm";
 
 const HerzkraftSectionContent = styled(SectionContent)`
   display: grid;
@@ -100,7 +99,7 @@ export default function HomePage({ data }) {
           <EventList events={events} />
 
           <p className="lead">
-            Du suchst die Yin Yoga Termine?{' '}
+            Du suchst die Yin Yoga Termine?{" "}
             <Link className="neutral nowrap" to="/yin-yoga#termine">
               Hier entlang.
             </Link>
@@ -111,8 +110,6 @@ export default function HomePage({ data }) {
         </SectionContent>
       </EventSection>
 
-      <NewsletterForm />
-
       <PriceSection id="preise">
         <SectionContent>
           <h2>{content.pricesHeadline}</h2>
@@ -121,7 +118,7 @@ export default function HomePage({ data }) {
           <PriceList prices={prices} />
 
           <p className="lead">
-            Du hast Fragen zu den Preisen?{' '}
+            Du hast Fragen zu den Preisen?{" "}
             <a
               className="neutral nowrap"
               href={`mailto:${email}?subject=Frage zu den Herzkraft Yoga-Preisen`}

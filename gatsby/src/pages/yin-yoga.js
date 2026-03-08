@@ -1,16 +1,15 @@
-import { Link, graphql } from 'gatsby';
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import BlockContent from '@sanity/block-content-to-react';
-import styled from 'styled-components';
-import Section, { SectionContent } from '../components/Section';
-import Hero from '../components/Hero';
-import HKImage from '../components/HKImage';
-import SEO from '../components/SEO';
-import EventList from '../components/EventList';
-import PriceList from '../components/PriceList';
-import NewsletterForm from '../components/NewsletterForm';
-import ContactForm from '../components/ContactForm';
+import { Link, graphql } from "gatsby";
+import React from "react";
+import { Helmet } from "react-helmet";
+import BlockContent from "@sanity/block-content-to-react";
+import styled from "styled-components";
+import Section, { SectionContent } from "../components/Section";
+import Hero from "../components/Hero";
+import HKImage from "../components/HKImage";
+import SEO from "../components/SEO";
+import EventList from "../components/EventList";
+import PriceList from "../components/PriceList";
+import ContactForm from "../components/ContactForm";
 
 const YinSection = styled(Section)`
   text-align: center;
@@ -45,16 +44,16 @@ export default function YinYogaPage({ data }) {
   } = data.site;
 
   return (
-    <>      
+    <>
       <Helmet
         bodyAttributes={{
-          class: 'is-page--yin',
+          class: "is-page--yin",
         }}
-      ></Helmet>
+      />
 
       <SEO />
       <Hero image={yin.heroImage.asset.fluid} isYin />
-      
+
       <YinSection id="yin-yoga">
         <SectionContent>
           <div>
@@ -73,15 +72,13 @@ export default function YinYogaPage({ data }) {
           <EventList events={events} />
 
           <p className="lead">
-            Du suchst die Herzkraft-Termine?{' '}
+            Du suchst die Herzkraft-Termine?{" "}
             <Link className="neutral nowrap" to="/#termine">
               Hier entlang.
             </Link>
           </p>
         </SectionContent>
       </EventSection>
-
-      <NewsletterForm />
 
       <PriceSection id="preise">
         <SectionContent>
@@ -91,7 +88,7 @@ export default function YinYogaPage({ data }) {
           <PriceList prices={prices} />
 
           <p className="lead">
-            Du hast Fragen zu den Preisen?{' '}
+            Du hast Fragen zu den Preisen?{" "}
             <a
               className="neutral nowrap"
               href={`mailto:${email}?subject=Frage zu den Herzkraft Yin Yoga-Preisen`}
@@ -109,7 +106,7 @@ export default function YinYogaPage({ data }) {
           <h2>{yin.aboutHeadline}</h2>
           <HKImage src={yin.aboutImage.asset.fluid} isInline />
           <BlockContent blocks={yin._rawAboutText} />
-        </SectionContent> 
+        </SectionContent>
       </Section>
 
       <ContactForm />
@@ -129,7 +126,7 @@ export const query = graphql`
     content: sanityHerzkraft {
       eventsHeadline
       pricesHeadline
-      pricesSubtext      
+      pricesSubtext
     }
     yin: sanityYin {
       heroImage {

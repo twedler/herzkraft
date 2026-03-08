@@ -1,25 +1,25 @@
-import React, { useEffect } from 'react';
-import Section, { SectionContent } from './Section';
+import Section, { SectionContent } from "./Section";
 
 export default function ContactForm() {
-  useEffect(() => {
-    const script = document.createElement('script');
-  
-    script.src = "https://nadineseuffert.activehosted.com/f/embed.php?id=3";
-    script.async = true;
-  
-    document.body.appendChild(script);
-  
-    return () => {
-      document.body.removeChild(script);
-    }
-  }, []);
+  const body = `Hallo liebe Nadine,%0d%0a%0d%0ameine Nachricht an dich: (bitte angeben)%0d%0a%0d%0aVielen Dank und viele Grüße%0d%0a%0d%0a`;
 
-  return (        
-      <Section>
-        <SectionContent>
-          <div className="_form_3"></div>
-        </SectionContent>
-      </Section>
+  return (
+    <Section id="contact">
+      <SectionContent>
+        <h2>Kontakt</h2>
+        <p>
+          Von Herz zu Herz - falls Du Fragen zu meinen Angeboten oder sonst was
+          auf dem Herzen hast, schreib mir gerne eine Nachricht.
+        </p>
+        <p>
+          <a
+            className="button"
+            href={`mailto:herzkraft@nadineseuffert.com?subject=Herzensbotschaft&body=${body}`}
+          >
+            Absenden
+          </a>
+        </p>
+      </SectionContent>
+    </Section>
   );
 }

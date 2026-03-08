@@ -1,11 +1,11 @@
-import { Link } from 'gatsby';
-import React, { useState, useRef, useEffect, Component } from 'react';
-import styled from 'styled-components';
-import { FaInstagram, FaPodcast, FaSpotify, FaYoutubeSquare } from 'react-icons/fa';
-import { BiX, BiMenu } from 'react-icons/bi';
-import Menu, { MenuItemsHorizontal, MenuItemsVertical } from './Menu';
-import breakpoints, { narrowContentWidth } from '../utils/breakpoints';
-import Logo from './Logo';
+import { Link } from "gatsby";
+import React, { useState, useRef, useEffect, Component } from "react";
+import styled from "styled-components";
+import { FaInstagram, FaPodcast, FaYoutubeSquare } from "react-icons/fa";
+import { BiX, BiMenu } from "react-icons/bi";
+import Menu, { MenuItemsHorizontal, MenuItemsVertical } from "./Menu";
+import breakpoints, { narrowContentWidth } from "../utils/breakpoints";
+import Logo from "./Logo";
 
 const NavigationStyles = styled.div`
   position: sticky;
@@ -145,24 +145,24 @@ const CloseButton = styled.button`
 
 const items = [
   {
-    text: 'Herzkraft Yoga',
-    url: '/#herzkraft-yoga',
+    text: "Herzkraft Yoga",
+    url: "/#herzkraft-yoga",
   },
   {
-    text: 'Yin Yoga',
-    url: '/yin-yoga',
+    text: "Yin Yoga",
+    url: "/yin-yoga",
   },
   {
-    text: 'Astro Yoga',
-    url: '/astro-yoga',
-  },    
-  {
-    text: 'Blog',
-    url: '/#blog',
+    text: "Astro Yoga",
+    url: "/astro-yoga",
   },
   {
-    text: 'Nadine',
-    url: '/#nadine',
+    text: "Blog",
+    url: "/#blog",
+  },
+  {
+    text: "Nadine",
+    url: "/#nadine",
   },
 ];
 
@@ -178,18 +178,13 @@ function ExternalLinks() {
   return (
     <MenuItemsHorizontal>
       <li>
-        <ExternalLink to="https://www.instagram.com/nadineseuffert/">
-          <FaInstagram />
-        </ExternalLink>
-      </li>
-      <li>
         <ExternalLink to="https://www.youtube.com/@nadineseuffert/">
           <FaYoutubeSquare />
         </ExternalLink>
       </li>
       <li>
-        <ExternalLink to="https://open.spotify.com/show/4m5dBTNNHOLLma2rtStjMV">
-          <FaSpotify />
+        <ExternalLink to="https://www.instagram.com/nadineseuffert/">
+          <FaInstagram />
         </ExternalLink>
       </li>
       <li>
@@ -268,7 +263,7 @@ class MobileNavigation extends Component {
           <BiMenu /> Menü
         </MenuButton>
 
-        {this.state.showNav ? mobileNavigation : ''}
+        {this.state.showNav ? mobileNavigation : ""}
       </>
     );
   }
@@ -283,15 +278,15 @@ export default function Navigation() {
 
   useEffect(() => {
     handleScroll();
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', () => handleScroll);
+      window.removeEventListener("scroll", () => handleScroll);
     };
   }, []);
 
   return (
-    <NavigationStyles className={`${isSticky ? ' is-sticky' : ''}`} ref={ref}>
+    <NavigationStyles className={`${isSticky ? " is-sticky" : ""}`} ref={ref}>
       <Logo icon />
 
       <MobileNavigation />
