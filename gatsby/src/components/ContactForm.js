@@ -9,7 +9,7 @@ const ContactSection = styled(Section)`
 `;
 
 export default function ContactForm() {
-  const body = `Hallo liebe Nadine,%0d%0a%0d%0ameine Nachricht an dich:%0d%0a%0d%0a(bitte angeben)%0d%0a%0d%0aVielen Dank und viele Grüße%0d%0a%0d%0a`;
+  const body = `Hallo liebe Nadine,%0d%0a%0d%0ameine Nachricht an dich:%0d%0a(bitte angeben)%0d%0a%0d%0aViele Grüße%0d%0a%0d%0a`;
 
   return (
     <ContactSection id="contact">
