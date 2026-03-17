@@ -421,37 +421,6 @@ export default function DatenschutzPage() {
 
           <h2>4. Datenerfassung auf dieser Website</h2>
 
-          <h3>Kontaktformular</h3>
-
-          <p>
-            Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden
-            Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort
-            angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und f&uuml;r
-            den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben
-            wir nicht ohne Ihre Einwilligung weiter.
-          </p>
-
-          <p>
-            Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs.
-            1 lit. b DSGVO, sofern Ihre Anfrage mit der Erf&uuml;llung eines
-            Vertrags zusammenh&auml;ngt oder zur Durchf&uuml;hrung
-            vorvertraglicher Ma&szlig;nahmen erforderlich ist. In allen
-            &uuml;brigen F&auml;llen beruht die Verarbeitung auf unserem
-            berechtigten Interesse an der effektiven Bearbeitung der an uns
-            gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer
-            Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt
-            wurde; die Einwilligung ist jederzeit widerrufbar.
-          </p>
-
-          <p>
-            Die von Ihnen im Kontaktformular eingegebenen Daten verbleiben bei
-            uns, bis Sie uns zur L&ouml;schung auffordern, Ihre Einwilligung zur
-            Speicherung widerrufen oder der Zweck f&uuml;r die Datenspeicherung
-            entf&auml;llt (z. B. nach abgeschlossener Bearbeitung Ihrer
-            Anfrage). Zwingende gesetzliche Bestimmungen &ndash; insbesondere
-            Aufbewahrungsfristen &ndash; bleiben unber&uuml;hrt.
-          </p>
-
           <h3>Anfrage per E-Mail, Telefon oder Telefax</h3>
 
           <p>
